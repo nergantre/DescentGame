@@ -4,7 +4,7 @@ import ShopView from './shop/storeview/ShopView'
 import PersonnelView from './shop/personnelview/PersonnelView'
 import RoomsView from './shop/roomsview/RoomsView'
 
-const component = ({view}) => {
+const component = ({view, shop_data}) => {
     console.log(view)
 
     switch (view) {
@@ -14,11 +14,11 @@ const component = ({view}) => {
         }
         case "PersonnelView":
         {
-            return <PersonnelView/>
+            return <PersonnelView staff={shop_data.get("staff")}/>
         }
         case "RoomsView":
         {
-            return <RoomsView/>
+            return <RoomsView building={shop_data.get("building")}/>
         }
         default:
         {
@@ -30,6 +30,7 @@ const component = ({view}) => {
 export default connect(
     function (state) {
         return {
-            view: state.get('ui').get('current_view')
+            view: state.get('ui').get('current_view'),
+            shop_data: state.get('shop_data')
         }
     })(component)

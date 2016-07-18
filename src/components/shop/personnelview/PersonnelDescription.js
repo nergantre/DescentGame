@@ -5,8 +5,8 @@ import React from 'react';
  *
  * This later will contain code to generate a description of the shop from current conditions.
  */
-export default ({description}) => (
+export default ({personnel}) => (
     <div className="col-md-12">
-        <h4>Hi, I'm a staff</h4>
+        <h4>Currently there are {personnel.size} workers in the shop.</h4>
     </div>
 )

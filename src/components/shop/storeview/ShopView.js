@@ -16,8 +16,8 @@ const navigationOptions = [
     ],
     [
         {
-            label: "Renovate",
-            target: "ConstructionView"
+            label: "Visit City",
+            target: "VisitView"
         },
         {
             label: "Report",
