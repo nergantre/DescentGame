@@ -7,6 +7,6 @@ import React from 'react';
  */
 export default ({personnel}) => (
     <div className="col-md-12">
-        <h4>Currently there are {personnel.size} workers in the shop.</h4>
+        <h4>Currently you have {personnel.size} subordinates.</h4>
     </div>
 )

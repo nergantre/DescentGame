@@ -10,3 +10,7 @@ export const roundToSignificantFigures = (num, n) => {
     const shifted = Math.round(num*magnitude);
     return shifted/magnitude;
 }
+
+export const randomFromArray = (arr) => {
+    return arr[Math.floor(Math.random() * arr.length)]
+}

@@ -3,7 +3,7 @@ import { buildGetByEnum, addEnums} from '../FakeEnumGenerator'
 const RaceData = addEnums([{
     id: "RACE_HUMAN",
     name: "Human",
-    description: "The main race of the Lamont empire. Average all around, with no real strengths or weaknesses.",
+    description: "The main race of the empire. Average all around, with no real strengths or weaknesses.",
     racial_traits: ["TRAIT_ADAPTABILITY"],
 },
 {

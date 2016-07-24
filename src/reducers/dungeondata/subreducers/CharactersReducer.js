@@ -1,9 +1,9 @@
 import { fromJS } from 'immutable'
-import GenerateCharacter from '../../../data/characters/CharacterGenerator'
+import GenerateCharacter from 'data/characters/CharacterGenerator'
 
 const initial = fromJS([
     GenerateCharacter("RACE_HUMAN"),
-    GenerateCharacter("RACE_SUCCUBUS")
+    GenerateCharacter()
 ])
 
 export default function(state=initial, action) {

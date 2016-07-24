@@ -10,7 +10,7 @@ import { RoomsData } from '../../../data/RoomsData'
 const numberOfRooms = (dungeon) => dungeon.get("current_rooms").size
 const pluralRooms = (dungeon) => numberOfRooms(dungeon) !== 1
 const currentRooms = (dungeon) => dungeon.get("current_rooms").map(room_type_name => {
-    if (!RoomsData.contains(room_type_name)) {
+    if (!RoomsData.has(room_type_name)) {
         console.warn(room_type_name + " is not a valid room!")
     }
     return RoomsData.get(room_type_name)
@@ -23,7 +23,7 @@ export default ({dungeon}) => (
     <div className="col-md-12">
         <h4>
             <p>There {pluralRooms(dungeon) ? "are" : "is"} currently {numberOfRooms(dungeon)} room{pluralRooms(dungeon) ? "s" : ""} built.</p>
-            <p>{getSpaceRemaining(dungeon)} sq meters of open space remains.</p>
+            <p>{getSpaceRemaining(dungeon)} sq meters of open space remains on this floor.</p>
         </h4>
     </div>
 )

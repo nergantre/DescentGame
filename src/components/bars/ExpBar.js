@@ -7,9 +7,7 @@ export default ({character}) => {
     const current_level = mapExpToLevel(race, current)
     const next_level = Math.min(MAX_LEVEL, current_level + 1)
     const max = mapLevelToExp(race, next_level)
-    console.log(current, current_level, next_level, max)
     const percent = Math.min(100, Math.round(current/max * 100))
-    console.log(current, max, percent)
     return (
     <div className="progress">
         <div className="progress-bar progress-bar-info" role="progressbar" aria-valuenow={current} aria-valuemin="0" aria-valuemax={max} style={{width: percent+"%"}}>
