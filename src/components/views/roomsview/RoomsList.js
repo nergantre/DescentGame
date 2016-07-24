@@ -1,5 +1,5 @@
 import React from 'react';
-import { RoomsData } from '../../../data/rooms'
+import { RoomsData } from '../../../data/RoomsData'
 import RoomItem from './RoomItem'
 const currentRooms = (rooms) => rooms.map(room_type_name => {
     if (!RoomsData.contains(room_type_name)) {

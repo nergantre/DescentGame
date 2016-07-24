@@ -4,7 +4,6 @@
 
 export const NAVIGATE_TO_VIEW_ACTION_TYPE = "NAVIGATE_TO"
 
-export const actionNavigateToView = (target) => ({
-    type: NAVIGATE_TO_VIEW_ACTION_TYPE,
-    target: target
-})
+export const actionNavigateToView = (target) => {
+    return Object.assign({type:NAVIGATE_TO_VIEW_ACTION_TYPE}, target)
+}

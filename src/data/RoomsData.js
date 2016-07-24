@@ -4,7 +4,7 @@ export const RoomsData = fromJS({
     BASIC_RECEPTION: {
         "room_name" : "Reception",
         "type" : "reception",
-        "room_description" : "An area where guests enter the building and wait for space to become available.",
+        "room_description" : "An area where guests enter the rooms and wait for space to become available.",
         "room_size" : 50,
         "base_atmosphere" : 5,
         "requirements" : []

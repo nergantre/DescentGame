@@ -7,6 +7,6 @@ import React from 'react';
  */
 export default ({description}) => (
     <div className="col-md-12">
-        <h4>Hi I'm a store!</h4>
+        <h4>This is your dungeon. It's not much, but it's yours.</h4>
     </div>
 )

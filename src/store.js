@@ -2,8 +2,8 @@ import { createStore } from 'redux'
 import { combineReducers } from 'redux-immutable'
 import { fromJS } from 'immutable'
 import ui from './reducers/ui/UIReducers'
-import shop_data from './reducers/shopdata/ShopDataReducer'
+import dungeon_data from './reducers/dungeondata/DungeonDataReducer'
 
-const reducer = combineReducers({ui, shop_data})
+const reducer = combineReducers({ui, dungeon_data})
 
 export default createStore(reducer, fromJS(window.devToolsExtension && window.devToolsExtension()))

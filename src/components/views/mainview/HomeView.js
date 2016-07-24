@@ -1,16 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import Description from './ShopDescription'
+import Description from './HomeDescription'
 import NavigationMenu from './../navigation/NavigationMenu'
 
 const navigationOptions = [
     [
         {
-            label: "Staff",
+            label: "Subordinates",
             target: "PersonnelView"
         },
         {
-            label: "Manage Rooms",
+            label: "Manage Dungeon",
             target: "RoomsView"
         }
     ],

@@ -11,13 +11,13 @@ const navigationOptions = [
     ]
 ]
 
-export default ({building}) => (
+export default ({dungeon}) => (
     <div className="container">
         <div className="row">
-            <Description building={building}/>
+            <Description dungeon={dungeon}/>
         </div>
         <div className="row">
-            <RoomsList rooms={building.get("current_rooms")}/>
+            <RoomsList rooms={dungeon.get("current_rooms")}/>
         </div>
         <NavigationMenu navigationOptions={navigationOptions}/>
     </div>
