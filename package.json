@@ -1,7 +1,7 @@
 {
-  "name": "midnight-district",
+  "name": "descent-game",
   "version": "0.0.1",
-  "description": "midnight district game",
+  "description": "descent game",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
