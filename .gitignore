@@ -2,3 +2,5 @@
 /*/
 !/dist/
 !.gitignore
+!index.html
+
